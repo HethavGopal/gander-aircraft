@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from 'react';
 import { Map, Grid3X3 } from 'lucide-react';
 
 interface MapToggleProps {

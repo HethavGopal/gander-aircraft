@@ -14,7 +14,6 @@ export default function AircraftFilters() {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {/* Tail Number Filter */}
         <div>
           <label htmlFor="tailNumber" className="block text-sm font-medium text-gray-300 mb-2">
             Tail Number
@@ -32,7 +31,6 @@ export default function AircraftFilters() {
           </div>
         </div>
 
-        {/* Model Filter */}
         <div>
           <label htmlFor="model" className="block text-sm font-medium text-gray-300 mb-2">
             Aircraft Model
@@ -50,7 +48,6 @@ export default function AircraftFilters() {
           </div>
         </div>
 
-        {/* Status Filter */}
         <div>
           <label htmlFor="status" className="block text-sm font-medium text-gray-300 mb-2">
             Status

@@ -76,7 +76,7 @@ interface AircraftStore {
 
 export const useAircraftStore = create<AircraftStore>()(
   persist(
-    (set, get) => ({
+    (set) => ({
       aircraft: initialAircraft,
       filters: {
         tailNumber: '',

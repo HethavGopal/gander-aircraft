@@ -7,7 +7,6 @@ export default function AircraftList() {
   const aircraft = useAircraftStore((state) => state.aircraft);
   const filters = useAircraftStore((state) => state.filters);
 
-  // Filter aircraft based on current filters
   const filteredAircraft = aircraft.filter((aircraft) => {
     const matchesTailNumber = !filters.tailNumber || 
       aircraft.tailNumber.toLowerCase().includes(filters.tailNumber.toLowerCase());

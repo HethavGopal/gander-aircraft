@@ -2,11 +2,10 @@
 
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
-import { Plane, Users, Activity } from 'lucide-react';
+import { Plane } from 'lucide-react';
 import AircraftFilters from '@/components/AircraftFilters';
 import AircraftList from '@/components/AircraftList';
 import StatusUpdateModal from '@/components/StatusUpdateModal';
-import StorageStatus from '@/components/StorageStatus';
 import MapToggle from '@/components/MapToggle';
 
 // Dynamically import the map component with SSR disabled
@@ -37,11 +36,6 @@ export default function HomePage() {
               <h1 className="text-xl font-bold text-white">FlightOps Pro</h1>
               <p className="text-xs text-gray-400">Aircraft Management System</p>
             </div>
-            
-            <div className="flex items-center gap-2 text-green-400 ml-6">
-              <Activity className="w-4 h-4" />
-              <span className="text-sm">Live</span>
-            </div>
           </div>
         </div>
       </header>
@@ -55,9 +49,6 @@ export default function HomePage() {
             Monitor and manage your aircraft fleet status in real-time. Click on any aircraft to update its operational status.
           </p>
         </div>
-
-        {/* Storage Status */}
-        <StorageStatus />
 
         {/* View Toggle */}
         <MapToggle showMap={showMap} onToggle={setShowMap} />

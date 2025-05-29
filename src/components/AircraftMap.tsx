@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { divIcon, LatLngExpression, LatLngBounds } from 'leaflet';
+import { divIcon, LatLngExpression } from 'leaflet';
 import { useAircraftStore } from '@/store/aircraftStore';
 import { Aircraft } from '@/types/aircraft';
 import 'leaflet/dist/leaflet.css';
